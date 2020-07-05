@@ -1,0 +1,297 @@
+body {
+  cursor:default;
+  background-image: linear-gradient(#FFFFFF, #FFE9E9, #FFFFFF);
+	height:3000px;
+  overflow-x: hidden;
+}
+
+/* all of the nav bar code */
+.nav_bar {
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  height: 9%;
+  background-color: #FFFFFF;
+  /* padding: 20px 10px; */
+}
+
+.nav_bar a {
+  cursor: default;
+  float: left;
+  color: #828282;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 72px;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+#logo {
+  position: relative;
+  top: -10px;
+  height: 50px;
+}
+
+/* button {
+  background-color: #6273FF;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+} */
+
+.nav_bar_right {
+  float: right;
+  overflow:hidden;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 13px;
+  line-height: 18px;
+}
+
+#demo {
+  cursor: default;
+  display: inline;
+  color: #828282;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  padding-right: 40px;
+}
+
+#signup_nav {
+  color: #F3EFEC;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'Righteous', cursive;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  background-color: #6273FF;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+}
+
+#line {
+  position: relative;
+  height: 1.5px;
+  width: 100%;
+  top: 98%;
+  background-color: #6273FF;
+}
+
+/* flex box */
+#whole_page {
+  display: flex;
+  top:0;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* intro section */
+#intro {
+  padding-top: 150px;
+  width: 100%;
+}
+
+#intro_title {
+  position: relative;
+  width: 482px;
+  height: 153px;
+  left: 95px;
+  top: 0px;
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  color: #6273FF;
+}
+
+#intro_exp {
+  position: relative;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  width: 413px;
+  height: 91px;
+  left: 97px;
+  top: -70px;
+  color: #828282;
+
+}
+
+input[type=text], select {
+  position: relative;
+  top: -80px;
+  left: 117px;
+  text-align: center;
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #828282;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+input[type=submit] {
+  position: relative;
+  top: -80px;
+  left: 170px;
+  width: 10%;
+  background-color: #6273FF;
+  color: white;
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  box-shadow: 0px 4px 4px #C8CEFF;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 20px;
+}
+
+input[type=submit]:hover {
+  background-color:#C8CEFF;
+  border: 2px solid #6273FF;
+  color: #6273FF;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+#signup_text {
+  position: relative;
+  /* text-align: center; */
+  left: 150px;
+  top: -80px;
+  width: 353px;
+  height: 53px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #828282;
+}
+
+#intro_img {
+  position: absolute;
+  width: 606px;
+  top: 15%;
+  left: 60%;
+}
+
+/* demo section */
+#demo {
+  padding-top: 200px;
+  width: 100%;
+}
+
+#demo_img {
+  position: relative;
+  width: 825px;
+  left: 20%;
+}
+
+#play_img {
+  position: relative;
+  z-index: 9;
+  top: -200px;
+  left: 6.5%;
+  width: 150px;
+}
+
+/* virtual section */
+#virt {
+  padding-top: 200px;
+  width: 100%;
+}
+
+#virt_img {
+  position: relative;
+  width: 745px;
+  left: 30%;
+  top: 400px;
+}
+
+#virt_title {
+  position: relative;
+  top: -200px;
+  left: 15%;
+  width: 657px;
+  height: 47px;
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  color: #4F4F4F;
+}
+
+#virt_exp {
+  position: relative;
+  left: 15%;
+  top: -230px;
+  width: 392px;
+  height: 97px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #828282;
+}
+
+#virt_button {
+  position: relative;
+  left: 15%;
+  top: -200px;
+  color: #6273FF;
+  background-color: transparent;
+  border: 2px solid #6273FF;;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/* bottom signup */
+#sign {
+  padding-top: 200px;
+  width: 100%;
+}
+
+#sign_placement {
+  left: 25%;
+}
