@@ -288,10 +288,26 @@ input[type=text]:focus {
 
 /* bottom signup */
 #sign {
-  padding-top: 200px;
+  padding-top: 400px;
   width: 100%;
 }
 
 #sign_placement {
+  position: relative;
   left: 25%;
+}
+
+#sign_text_2 {
+  position: relative;
+  top: -75px;
+  left: 7%;
+  width: 471px;
+  height: 121px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #828282;
 }
