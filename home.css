@@ -10,12 +10,13 @@ body {
   z-index: 10;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 104%;
+  margin-left:-10px;
+  border-bottom: 1.5px solid #6273FF;
   position: fixed;
   overflow: hidden;
   height: 9%;
   background-color: #FFFFFF;
-  /* padding: 20px 10px; */
 }
 
 .nav_bar a {
@@ -83,14 +84,6 @@ body {
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 5px;
-}
-
-#line {
-  position: relative;
-  height: 1.5px;
-  width: 100%;
-  top: 98%;
-  background-color: #6273FF;
 }
 
 /* flex box */
@@ -203,7 +196,7 @@ input[type=text]:focus {
   position: absolute;
   width: 606px;
   top: 15%;
-  left: 60%;
+  left: 50%;
 }
 
 /* demo section */
@@ -220,8 +213,9 @@ input[type=text]:focus {
 
 #play_img {
   position: relative;
+  margin: 0 auto;
   z-index: 9;
-  top: -200px;
+  top: -100px;
   left: 6.5%;
   width: 150px;
 }
@@ -310,4 +304,78 @@ input[type=text]:focus {
   line-height: 30px;
   text-align: center;
   color: #828282;
+}
+
+/* footer */
+
+.footer_bar {
+  position: relative;
+  z-index: 10;
+  left: 0;
+  bottom:0;
+  width: 104%;
+  margin-left:-10px;
+  overflow: hidden;
+  height: 200px;
+  padding-bottom: 20px;
+  background-color: #FFFFFF;
+  border-top: 1.5px solid #6273FF;
+
+}
+
+.footer_bar a {
+  cursor: default;
+  color: #828282;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 72px;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+.footer_bar p {
+  cursor: default;
+  color: #828282;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 72px;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+#footer_left {
+  height:inherit;
+  padding-top: 30px;
+  float: left;
+  width: 30%;
+  border-right:1.5px solid #6273FF;
+}
+
+#whole_logo {
+  position: relative;
+  left: 15%;
+}
+
+#contact {
+  height:inherit;
+  padding-left: 200px;
+  width: 30%;
+  padding-top: 30px;
+  float: left;
+}
+
+#footer_right {
+  /* padding-right: 50px; */
+  height:inherit;
+  width: 20%;
+  padding-top: 30px;
+  float: left;
+}
+
+#logo_2 {
+  height: 50px;
 }
