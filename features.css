@@ -170,6 +170,79 @@ body {
   left: 15%;
 }
 
+#paid_events {
+  position: relative;
+  width: 200px;
+  top: 200px;
+  left: 30%;
+}
+
+#tiered {
+  position: relative;
+  width: 300px;
+  top: -200px;
+  left: 60%;
+}
+
+#socials {
+  position: relative;
+  width: 300px;
+  top: 180px;
+  left: 25%;
+}
+
+#crm {
+  position: relative;
+  width: 300px;
+  top: -200px;
+  left: 60%;
+}
+
+#virt_placement {
+  position: relative;
+  top: -250px;
+}
+
+#virt {
+  position: relative;
+  z-index: 6;
+  width: 150px;
+  top: 180px;
+  left: 20%;
+}
+
+#ticketing {
+  position: relative;
+  width: 230px;
+  left: 60%;
+  top: -200px;
+}
+
+#dashboard {
+  position: relative;
+  width: 300px;
+  left: 15%;
+  top: 200px;
+}
+
+#curr_user {
+  position: relative;
+  width: 350px;
+  left: 65%;
+  top: 10px;
+}
+
+#curr_user_placement {
+  position: relative;
+  top: 150px;
+}
+
+#signup_flow {
+  position: relative;
+  width: 250px;
+  left: 25%;
+  top: 200px;
+}
 
 /* footer */
 
