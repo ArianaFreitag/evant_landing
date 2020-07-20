@@ -5,7 +5,7 @@ body {
 	height:420%;
   overflow-x: hidden;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 /* all of the nav bar code */
@@ -219,7 +219,7 @@ input[type=text]:focus {
 
 /* demo section */
 #demo {
-  padding-top: 500px;
+  padding-top: 300px;
   width: 100%;
 }
 
@@ -311,6 +311,7 @@ input[type=text]:focus {
 #sign {
   padding-top: 400px;
   width: 100%;
+  padding-bottom: 200px;
 }
 
 #sign_placement {
@@ -336,10 +337,10 @@ input[type=text]:focus {
 /* footer */
 
 .footer_bar {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   left: 0;
-  top:2800;
+  bottom: 0;
   width: 104%;
   margin-left:-10px;
   overflow: hidden;
