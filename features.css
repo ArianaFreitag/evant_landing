@@ -28,13 +28,13 @@ body {
   line-height: 18px;
   font-family: 'Poppins', sans-serif;
   padding-left: 72px;
-  padding-top: 20px;
+  padding-top: 25px;
   text-decoration: none;
 }
 
 #logo {
   position: relative;
-  top: -10px;
+  top: -15px;
   height: 50px;
 }
 
@@ -247,10 +247,10 @@ body {
 /* footer */
 
 .footer_bar {
-  position: relative;
+  position: absolute;
   z-index: 10;
   left: 0;
-  bottom:0;
+  bottom: 0;
   width: 104%;
   margin-left:-10px;
   overflow: hidden;
@@ -295,7 +295,8 @@ body {
 
 #whole_logo {
   position: relative;
-  left: 15%;
+  top: 40px;
+  left: 25%;
 }
 
 #contact {
@@ -315,5 +316,7 @@ body {
 }
 
 #logo_2 {
+  position: relative;
+  left: 2px;
   height: 50px;
 }

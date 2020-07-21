@@ -337,7 +337,7 @@ input[type=text]:focus {
 /* footer */
 
 .footer_bar {
-  position: fixed;
+  position: absolute;
   z-index: 10;
   left: 0;
   bottom: 0;
