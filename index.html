@@ -8,6 +8,7 @@
     <link <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Righteous&display=swap"
     rel="stylesheet" / >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="action.js"></script>
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <div class="nav_bar">
@@ -52,6 +53,15 @@
         <img src="atributes/landing_text.png" id="text_img" />
         <img src="atributes/landing_demo_1.png" id="demo_img" />
         <img src="atributes/play_pink.png" id="play_img" />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/sS1U0o_9NYU?controls=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          id="video1"
+        ></iframe>
       </div>
       <div id="virtual">
         <img src="atributes/landing_virt_1.png" id="virt_img" />
@@ -61,6 +71,12 @@
           having your community members install a new application.
         </p>
         <button id="virt_button">learn more</button>
+
+        <video id="watchMe">
+          <source src="atributes/video2.mp4" type="video/mp4" />
+        </video>
+
+        <div id="overlay"></div>
       </div>
       <div id="sign">
         <div id="sign_placement">
