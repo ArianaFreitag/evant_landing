@@ -423,6 +423,16 @@ video#video1 {
   transform: translate(-50%, -50%);
 }
 
+video#watchMe {
+  display: none;
+  z-index: 9999;
+  position:fixed;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #video_background {
   display: none;
   z-index: 9998;
@@ -443,14 +453,4 @@ video#video1 {
   top:0;
   left:0;
   background-color: rgb(0,0,0,0.6)
-}
-
-video#watchMe {
-  display: none;
-  z-index: 9999;
-  position:fixed;
-  height: 100%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
