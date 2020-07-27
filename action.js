@@ -1,6 +1,5 @@
 function startup() {
-  var video2 = document.getElementById("watchMe");
-  var overlay = document.getElementById("overlay");
+  var video2 = document.getElementById("video2");
   var video2_button = document.getElementById("virt_button");
   var video1 = document.getElementById("video1");
   var video1_button = document.getElementById("play_img");
@@ -37,6 +36,7 @@ function startup() {
     video2.style.display = "block";
     video2.play();
     $("body").css("overflow-y", "hidden");
+    console.log("off");
   });
 
   bg.addEventListener("click", function() {
