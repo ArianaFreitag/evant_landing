@@ -1,0 +1,174 @@
+body {
+  position: absolute;
+  cursor:default;
+	height:600px;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0
+}
+
+/* all of the nav bar code */
+.nav_bar {
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 104%;
+  margin-left:-10px;
+  border-bottom: 1.5px solid #6273FF;
+  position: fixed;
+  overflow: hidden;
+  height: 70px;
+  background-color: #FFFFFF;
+}
+
+.nav_bar a {
+  cursor: default;
+  float: left;
+  color: #828282;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 72px;
+  padding-top: 25px;
+  text-decoration: none;
+}
+
+#logo {
+  position: relative;
+  top: -15px;
+  height: 50px;
+}
+
+/* button {
+  background-color: #6273FF;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+} */
+
+.nav_bar_right {
+  float: right;
+  overflow:hidden;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 13px;
+  line-height: 18px;
+}
+
+#demo {
+  cursor: default;
+  display: inline;
+  color: #828282;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  padding-right: 40px;
+}
+
+#signup_nav {
+  color: #F3EFEC;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'Righteous', cursive;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  background-color: #6273FF;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+}
+/* fflexbox */
+#whole_page {
+  display: flex;
+  top:0;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+}
+
+/* footer */
+
+.footer_bar {
+  position: absolute;
+  z-index: 10;
+  left: 0;
+  bottom: 0;
+  width: 104%;
+  margin-left:-10px;
+  overflow: hidden;
+  height: 200px;
+  padding-bottom: 20px;
+  background-color: #FFFFFF;
+  border-top: 1.5px solid #6273FF;
+
+}
+
+.footer_bar a {
+  cursor: default;
+  color: #828282;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 72px;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+.footer_bar p {
+  cursor: default;
+  color: #828282;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 72px;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+#footer_left {
+  height:inherit;
+  padding-top: 30px;
+  float: left;
+  width: 30%;
+  border-right:1.5px solid #6273FF;
+}
+
+#whole_logo {
+  position: relative;
+  top: 40px;
+  left: 25%;
+}
+
+#contact {
+  height:inherit;
+  padding-left: 200px;
+  width: 30%;
+  padding-top: 30px;
+  float: left;
+}
+
+#footer_right {
+  /* padding-right: 50px; */
+  height:inherit;
+  width: 20%;
+  padding-top: 30px;
+  float: left;
+}
+
+#logo_2 {
+  position: relative;
+  left: 2px;
+  height: 50px;
+}

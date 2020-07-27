@@ -16,6 +16,7 @@ function startup() {
 
   video_icon.addEventListener("click", function() {
     if (video.display == "block") {
+      console.log("video off");
       video.pause();
       video.currentTime = 0;
       video.style.display = "none";
@@ -37,7 +38,6 @@ function startup() {
   video1_button.addEventListener("click", function() {
     if (video1.style.display == "block") {
       video1.style.display = "none";
-      video1.stopVideo();
       $("body").css("overflow-y", "scroll");
     } else {
       video1.style.display = "block";
