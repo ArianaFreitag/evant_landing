@@ -32,7 +32,7 @@ function startup() {
   });
 
   video2_button.addEventListener("click", function() {
-    bg.style.display = "block";
+    bg2.style.display = "block";
     video2.style.display = "block";
     video2.play();
     $("body").css("overflow-y", "hidden");
@@ -49,9 +49,40 @@ function startup() {
   bg2.addEventListener("click", function() {
     video2.pause();
     video2.style.display = "none";
+    console.log("it should have turned off");
     bg2.style.display = "none";
     $("body").css("overflow-y", "scroll");
   });
+}
+
+$("#email_input").submit(function(e) {
+  console.log("here");
+  e.preventDefault(); // avoid to execute the actual submit of the form.
+
+  var form = $(this);
+  var url = form.attr("action");
+  if (ValidateEmail(form.serialize())) {
+    $.ajax({
+      type: form.attr("method"),
+      url: url,
+      data: form.serialize(), // serializes the form's elements.
+      success: function(data) {
+        alert(data);
+      }
+    });
+  } else {
+    console.log("invalid email");
+  }
+});
+
+function ValidateEmail(mail) {
+  if (
+    /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value)
+  ) {
+    return true;
+  }
+  alert("You have entered an invalid email address!");
+  return false;
 }
 
 window.addEventListener("load", startup, false);
