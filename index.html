@@ -36,14 +36,16 @@
           Create, coordinate, communicate virtual and in person events using
           Evant
         </p>
-        <form action="https://dev.evant.app/requestAccess" method="post">
+        <!-- action="https://dev.evant.app/requestAccess" method="post" -->
+        <form id="email_form">
           <input
             type="text"
             id="email_input"
             name="email"
             placeholder="name@email.com"
+            value=""
           />
-          <input type="submit" value="Request Access" />
+          <input type="submit" value="Request Access" id="req_access" />
         </form>
         <p id="signup_text">
           Sign up for the free account in less than a minute
