@@ -152,7 +152,7 @@ input[type=text], select {
   line-height: 22px;
 }
 
-input[type=submit] {
+input[type=button] {
   position: relative;
   top: -80px;
   left: 170px;

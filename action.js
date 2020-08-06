@@ -60,27 +60,23 @@ function startup() {
     $("body").css("overflow-y", "scroll");
   });
 
-  var httpRequest = new XMLHttpRequest();
-
-  httpRequest.addEventListener("readystatechange", function() {
-    if (this.readyState === 4) {
-      console.log(this.responseText);
-    }
-  });
-
-  form.addEventListener("submit", function() {
+  signUpButton.addEventListener("click", function() {
+    event.preventDefault();
+    var xhr = new XMLHttpRequest();
     data = JSON.stringify({ email: email.value });
 
-    httpRequest.onreadystatechange = function() {
-      if (httpRequest.readyState === 4) {
-        callback(xhr.responseText);
+    xhr.addEventListener("readystatechange", function() {
+      if (this.readyState === 4) {
+        console.log(this.responseText);
       }
-    };
+    });
 
     if (ValidateEmail(email.value)) {
-      httpRequest.open("post", "https://dev.evant.app/requestAccess");
-      httpRequest.setRequestHeader("Content-Type", "application/json");
-      httpRequest.send(data);
+      xhr.open("POST", "https://dev.evant.app/requestAccess");
+      xhr.setRequestHeader("Content-Type", "application/json");
+
+      xhr.send(data);
+      console.log("sent");
     } else {
       console.log("invalid email");
     }
