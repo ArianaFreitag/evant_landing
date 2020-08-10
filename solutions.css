@@ -1,7 +1,19 @@
 body {
   position: absolute;
   cursor:default;
-	height:600px;
+	height:800px;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0
+}
+
+/* all of the nav bar code */
+body {
+  position: absolute;
+  cursor:default;
+  background-image: linear-gradient(#FFFFFF, #FFE9E9, #FFFFFF);
+	height:3000;
   overflow-x: hidden;
   margin: 0;
   padding: 0
@@ -87,14 +99,186 @@ body {
   padding-bottom: 8px;
   border-radius: 5px;
 }
+
 /* fflexbox */
-#whole_page {
-  display: flex;
-  top:0;
-  left: 0;
-  width: 100%;
-  flex-direction: column;
+#title {
+  position: absolute;
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 45px;
+  color: #6273FF;
+  width: 600px;
+  top: 75px;
+  left: 100px;
 }
+
+
+#networking {
+  position: absolute;
+  top: 200px;
+  width: 50%;
+}
+
+#networking_box {
+  position: relative;
+  left: 250px;
+  height: 250px;
+}
+
+#networking_title {
+  position: relative;
+  z-index: 1;
+  width: inherit;
+  top: -220px;
+  left: 330px;
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4F4F4F;
+}
+
+#networking_text {
+  z-index: 1;
+  position: relative;
+  top: -240px;
+  left: 330px;
+  width: 300px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #828282;
+}
+
+#community {
+  position: absolute;
+  top:500px;
+  width: 50%;
+}
+
+#community_box {
+  position: relative;
+  width: 400px;
+  left: 250px;
+}
+
+#community_title {
+  position: relative;
+  z-index: 1;
+  width: inherit;
+  top: -230px;
+  left: 330px;
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4F4F4F;
+}
+
+#community_text {
+  z-index: 1;
+  position: relative;
+  top: -250px;
+  left: 330px;
+  width: 300px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #828282;
+}
+
+#clubs {
+  position: absolute;
+  top:200px;
+  width: 50%;
+}
+
+#clubs_box {
+  position: relative;
+  height: 240px;
+  left: 800px;
+}
+
+#clubs_title {
+  position: relative;
+  z-index: 1;
+  width: inherit;
+  top: -200px;
+  left: 880px;
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4F4F4F;
+}
+
+#clubs_text {
+  z-index: 1;
+  position: relative;
+  top: -220px;
+  left: 880px;
+  width: 300px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #828282;
+}
+
+#resturants {
+  position: absolute;
+  top:500px;
+  width: 50%;
+}
+
+#resturants_box {
+  position: relative;
+
+  height: 210px;
+  left: 800px;
+}
+
+#resturants_title {
+  position: relative;
+  z-index: 1;
+  width: inherit;
+  top: -180px;
+  left: 880px;
+  font-family: Righteous;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 30px;
+  color: #4F4F4F;
+}
+
+#resturants_text {
+  z-index: 1;
+  position: relative;
+  top: -200px;
+  left: 880px;
+  width: 300px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #828282;
+}
+
+
+
+/* footer */
 
 /* footer */
 
@@ -102,7 +286,7 @@ body {
   position: absolute;
   z-index: 10;
   left: 0;
-  bottom: 0;
+  top: 120%;
   width: 104%;
   margin-left:-10px;
   overflow: hidden;
