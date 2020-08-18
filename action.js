@@ -9,6 +9,7 @@ function startup() {
   var bg = document.getElementById("video_background");
   var bg2 = document.getElementById("video_background_2");
   var signUpButton = document.getElementById("req_access");
+  var signUpButton_2 = document.getElementById("req_access_2");
   var form = document.getElementById("email_form");
   var email = document.getElementById("email_input");
 
@@ -76,13 +77,42 @@ function startup() {
       xhr.setRequestHeader("Content-Type", "application/json");
 
       xhr.send(data);
-      console.log("sent");
+      signUpButton.disabled = true;
+      signUpButton.style.opacity = "0.4";
+      signUpButton_2.disabled = true;
+      signUpButton_2.style.opacity = "0.4";
+      email.style.placeholder = "Request Received";
+      console.log("here");
     } else {
       console.log("invalid email");
     }
   });
 
-  // form.dispatchEvent(new Event("submit"));
+  signUpButton_2.addEventListener("click", function() {
+    event.preventDefault();
+    var xhr = new XMLHttpRequest();
+    data = JSON.stringify({ email: email.value });
+
+    xhr.addEventListener("readystatechange", function() {
+      if (this.readyState === 4) {
+        console.log(this.responseText);
+      }
+    });
+
+    if (ValidateEmail(email.value)) {
+      xhr.open("POST", "https://dev.evant.app/requestAccess");
+      xhr.setRequestHeader("Content-Type", "application/json");
+
+      xhr.send(data);
+      signUpButton.disabled = true;
+      signUpButton.style.opacity = "0.4";
+      signUpButton_2.disabled = true;
+      signUpButton_2.style.opacity = "0.4";
+      console.log("here");
+    } else {
+      console.log("invalid email");
+    }
+  });
 }
 
 function ValidateEmail(mail) {
