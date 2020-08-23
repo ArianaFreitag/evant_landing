@@ -129,6 +129,7 @@ body {
 
 #networking_title {
   position: relative;
+  pointer-events: none;
   z-index: 1;
   width: inherit;
   top: -220px;
@@ -143,6 +144,7 @@ body {
 
 #networking_text {
   z-index: 1;
+  pointer-events: none;
   position: relative;
   top: -240px;
   left: 330px;
@@ -153,6 +155,14 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #828282;
+}
+
+#networking_icon {
+  z-index: 2;
+  position: relative;
+  width: 50px;
+  top: -455px;
+  left: 270px;
 }
 
 #community {
@@ -195,6 +205,14 @@ body {
   color: #828282;
 }
 
+#community_icon {
+  z-index: 2;
+  position: relative;
+  width: 60px;
+  top: -455px;
+  left: 270px;
+}
+
 #clubs {
   position: absolute;
   top:200px;
@@ -233,6 +251,14 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #828282;
+}
+
+#clubs_icon {
+  z-index: 2;
+  position: relative;
+  width: 50px;
+  top: -420px;
+  left: 820px;
 }
 
 #resturants {
@@ -274,6 +300,14 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #828282;
+}
+
+#res_icon {
+  z-index: 2;
+  position: relative;
+  width: 50px;
+  top: -370px;
+  left: 820px;
 }
 
 
