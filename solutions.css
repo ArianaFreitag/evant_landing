@@ -8,16 +8,6 @@ body {
   padding: 0
 }
 
-/* all of the nav bar code */
-body {
-  position: absolute;
-  cursor:default;
-  background-image: linear-gradient(#FFFFFF, #FFE9E9, #FFFFFF);
-	height:3000;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0
-}
 
 /* all of the nav bar code */
 .nav_bar {

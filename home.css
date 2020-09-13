@@ -41,16 +41,6 @@ body {
   height: 50px;
 }
 
-/* button {
-  background-color: #6273FF;
-  border: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  border-radius: 5px;
-} */
-
 .nav_bar_right {
   float: right;
   overflow:hidden;
@@ -241,6 +231,13 @@ input[type=text]:focus {
   top: -25px;
   left: 17%;
   width: 20%;
+}
+
+#cpu_img {
+  position: relative;
+  top: -35px;
+  left: -55%;
+  width: 15%;
 }
 
 #play_img:hover {
